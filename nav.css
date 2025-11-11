@@ -1,0 +1,148 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap');
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2E7D32;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #1E88E5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+.primary-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background-color: #7CB342;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+    .primary-button:hover {
+        background-color: #5E9B2F;
+        transform: translateY(-2px);
+    }
+
+.small-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.large-button {
+    padding: 18px 40px;
+    font-size: 1.15rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+#sticky {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: none;
+}
+
+#static {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2E7D32;
+    z-index: 1000;
+}
+
+#sign {
+    color: white;
+    text-decoration: none;
+    font-weight: 550;
+    padding: 8px 15px; /* Added padding to make it look more like a button */
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    #sign:hover {
+        background-color: white;
+        color: #2E7D32;
+    }
+
+
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #7CB342;
+    padding-bottom: 3px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #2E7D32;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 0.95rem;
+}
+
+    footer a {
+        color: #7CB342;
+        margin: 0 12px;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+footer {
+    margin-top: 40px;
+    padding: 30px 15px;
+}
+
+    footer a {
+        display: block;
+        margin: 8px 0;
+    }

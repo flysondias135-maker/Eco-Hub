@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="styles4.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Eco-Hub</title>
+    <script>
+        window.addEventListener('scroll', function () {
+            const stickyHeader = document.getElementById('sticky');
+            const staticHeader = document.getElementById('static');
+            const triggerPoint = staticHeader ? staticHeader.offsetHeight : 0;
+
+            if (window.scrollY > triggerPoint) {
+                stickyHeader.style.display = 'flex';
+            } else {
+                stickyHeader.style.display = 'none';
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <header id="static">
+        <div id="logo">
+            <a href="home.html">
+                <img src="eco-hub logo.webp" height="70" width="70" alt="Eco-Hub logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="products-and-services.html">Products and Services</a></li>
+                <li><a href="contact-us.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+
+    <header id="sticky">
+        <div id="logo">
+            <a href="home.html">
+                <img src="eco-hub logo.webp" height="70" width="70" alt="Eco-Hub logo (sticky)">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="products-and-services.html">Products and Services</a></li>
+                <li><a href="contact-us.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+
+    <main id="contact-us-page">
+        <section class="page-title">
+            <h1>Get in Touch</h1>
+            <p class="subtitle">We'd love to hear from you. Whether you have a question about our products, need a custom solution, or just want to chat about sustainability, our team is ready to assist.</p>
+        </section>
+
+        <section id="contact-info" class="content-block center-text">
+            <h2>Our Details</h2>
+            <div class="contact-details-grid">
+                <div class="detail-item">
+                    <img src="icon-location.webp" alt="Location icon">
+                    <h3>Visit Us</h3>
+                    <p>Pcce,<br>Verna, Goa</p>
+                </div>
+                <div class="detail-item">
+                    <img src="icon-phone.webp" alt="Phone icon">
+                    <h3>Call Us</h3>
+                    <p>Phone: +91 9209053289</p>
+                </div>
+                <div class="detail-item">
+                    <img src="icon-email.webp" alt="Email icon">
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:info@ecohub.com">info@ecohub.com</a><br><a href="mailto:support@ecohub.com">support@ecohub.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form-section" class="content-block yellow-bg">
+            <h2 class="center-text">Send Us a Message</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="primary-button large-button">Send Message</button>
+            </form>
+        </section>
+
+        <section id="map-section" class="content-block">
+            <h2 class="center-text">Find Our Location</h2>
+            <div class="map-placeholder">
+                <p>Map Placeholder</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="copyright">All rights reserved © 2023 Eco-Hub</div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+    </footer>
+
+</body>
+</html>

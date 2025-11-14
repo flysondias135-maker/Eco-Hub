@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles1.css">
+    <meta charset="UTF-8">
+    <title>Eco-Hub</title>
+    <script>
+        window.addEventListener('scroll', function () {
+            const stickyHeader = document.getElementById('sticky');
+            const staticHeader = document.getElementById('static');
+            const triggerPoint = staticHeader.offsetHeight;
+
+            if (window.scrollY > triggerPoint) {
+                stickyHeader.style.display = "flex";
+            } else {
+                stickyHeader.style.display = 'none';
+            }
+        });
+    </script>
+
+</head>
+<body>
+
+    <header id="static">
+        <div id="logo"><a href="home.html"><img src="eco-hub logo.webp" height="70" width="70" /></a></div>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="products-and-services.html">Products and Services</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+    <header id="sticky">
+        <div id="logo"><a href="home.html"><img src="eco-hub logo.webp" height="60" width="60" /></a></div>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="products-and-services.html">Products and Services</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+
+    <div id="hero">
+        <div id="overlay"></div>
+        <div id="items">
+            <img src="eco-hub logo text.png" height="300" width="300" alt="Eco-Hub logo text" />
+            <h1>Packaging That Protects More Than Products —</h1><h1 id="highlight"> It Protects the Planet.</h1>
+            <button onclick="window.location.href = 'about-us.html';">Discover Our Mission</button>
+        </div>
+
+    </div>
+    <section id="padding">
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>
+                At Eco-Hub, our mission is to revolutionize the packaging industry by providing innovative, sustainable, and eco-friendly packaging solutions. We are committed to helping businesses reduce their environmental footprint, enhance brand reputation, and achieve operational efficiency through responsible practices.
+            </p>
+            <button onclick="window.location.href = 'about-us.html';">Learn More About Us</button>
+        </section>
+
+        <section id="offerings">
+            <h2>What We Offer</h2>
+            <div class="product-list">
+                <div class="product">Recycled & Recyclable Corrugated Boxes</div>
+                <div class="product">Certified Compostable Mailer Bags</div>
+                <div class="product">Biodegradable & Water-Soluble Void Fill</div>
+            </div>
+            <button onclick="window.location.href = 'products-and-services.html';">View All Products & Services</button>
+        </section>
+
+        <section id="trusted">
+            <h2>Trusted By</h2>
+            <div class="trusted-logos">
+                <span>UPS</span>
+                <span>FedEx</span>
+                <span>DHL</span>
+                <span>Amazon</span>
+                <span>Target</span>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial-list">
+                <div class="testimonial">"Eco-Hub transformed our packaging strategy! Their compostable mailers are fantastic, aligning perfectly with our brand's green initiatives. Highly recommended!"<br>- Jane D., Founder of GreenGoods</div>
+                <div class="testimonial">"We've significantly reduced our shipping costs and environmental impact thanks to Eco-Hub's sustainable solutions. Their team is incredibly knowledgeable and supportive."<br>- Mark S., Operations Manager at SwiftCycle</div>
+                <div class="testimonial">"Finding truly recyclable packaging that also looks professional was a challenge until we found Eco-Hub. Their corrugated boxes are top-notch and our customers love them."<br>- Emily R., CEO of Earthy Treats Bakery</div>
+            </div>
+            <button onclick="window.location.href = 'contact-us.html';">Get Your Custom Solution</button>
+        </section>
+
+        <footer>
+            <div class="copyright">All rights reserved © 2023 Eco-Hub</div>
+            <a href="#">privacy policy</a>
+            <a href="#">terms and conditions</a>
+        </footer>
+    </section>
+
+
+</body>
+</html>

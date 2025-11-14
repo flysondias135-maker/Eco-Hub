@@ -146,8 +146,12 @@ button {
 
     button:hover {
         background-color: #689f38; /* Slightly darker green on hover */
-    }
+}
 
+    #items h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
 
 /* Mission section as a more compact introduction */
 #mission {
@@ -218,7 +222,7 @@ button {
         height: 250px;
         object-fit: contain;
         margin-bottom: 25px;
-        background-color: #ffffff;
+    background-color: #ffffff;
         border-radius: 8px;
         padding: 15px;
     }
@@ -250,6 +254,8 @@ button {
     background-color: #f0f0f0; /* Slightly different background */
     padding: 80px 20px; /* Increased padding */
     text-align: center;
+    display: grid;
+    place-items: center;
 }
 
    
@@ -332,7 +338,7 @@ button {
         color: #333;
         text-align: right;
         font-size: 1.05rem;
-    }
+}
 
 
 
@@ -382,11 +388,11 @@ button {
 
     #mission, #offerings, #trusted, #testimonials {
         padding: 40px 15px;
-    }
+        }
 
         #mission h2, #offerings h2, #trusted h2, #testimonials h2 {
-            font-size: 2.2rem;
-        }
+        font-size: 2.2rem;
+    }
 
         #mission p {
             font-size: 1rem;
@@ -418,7 +424,7 @@ button {
         .trusted-logos span {
             width: 80%; /* Wider logos on small screens */
             min-width: unset;
-            font-size: 1rem;
+        font-size: 1rem;
             padding: 12px 20px;
         }
 
@@ -428,10 +434,10 @@ button {
 
         .testimonial:before {
             font-size: 4em;
-        }
+}
 
 
-    @media (max-width: 480px) {
+@media (max-width: 480px) {
         #hero {
             height: 35vh;
         }
@@ -450,21 +456,21 @@ button {
         }
 
         #mission h2, #offerings h2, #trusted h2, #testimonials h2 {
-            font-size: 1.8rem;
-        }
+        font-size: 1.8rem;
+    }
 
         button {
             padding: 10px 15px;
             font-size: 0.9rem;
-        }
+    }
 
         .product h3 {
             font-size: 1.2rem;
-        }
+}
 
         .testimonial {
             font-size: 0.9rem;
-        }
+}
 
             .testimonial:before {
                 font-size: 3.5em;
